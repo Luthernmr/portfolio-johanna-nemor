@@ -1,13 +1,15 @@
 import './App.css'
-import { Text, Box,Center } from "@chakra-ui/react";
+import { Box,Center } from "@chakra-ui/react";
 import Header from './components/header/Header'
+import LandingPage from './components/content/LandingPage'
 
 function App() {
 
   return (
-      <Center minW={"100%"}   border={"2px solid red"}>
-        <Box  width={"90vw"} border={"2px solid red"} >
+      <Center minW={"100%"} backgroundColor={"#f2f2f2"} >
+        <Box  width={"90vw"} height={"97vh"} mt={"3vh"}>
           <Header />
+          <LandingPage />
         </Box>
       </Center>
   )

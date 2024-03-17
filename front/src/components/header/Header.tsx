@@ -1,17 +1,66 @@
-import { Heading,Text, HStack, Image, Link } from '@chakra-ui/react'
-import React from 'react'
+import { Button, HStack, Image, Link } from '@chakra-ui/react'
+import { useState } from 'react'
 export default function Header() {
-const linkMap = [
-    
-]
+
+    const [activeLink, setActiveLink] = useState("#accueil"); // Définissez le lien actif par défaut sur la page d'accueil
+
+    // Fonction pour mettre à jour le lien actif lorsque vous cliquez sur un lien
+    const handleLinkClick = (hash: any) => {
+        setActiveLink(hash);
+    };
     return (
-        <HStack maxH={"20vh"} justifyContent={"space-between"} width={"100%"} border={"2px solid blue"}>
+        <HStack h={"10vh"} justifyContent={"space-between"} width={"100%"} mb={"2vh"} >
             <Image boxSize={'70px'} src='/Logo_jn.png' />
-            <HStack>
-                <Text>Test</Text>
-                <Link sx={{ textDecoration: "underline", textDecorationColor: "red", textDecorationThickness: "2px", textUnderlineOffset: "2px" }} display={{ base: "none", md: 'flex' }} href={"#services"}>ACCUEUIL</Link>
-                <Link display={{ base: "none", md: 'flex' }} href={"#about"}>À PROPOS</Link>
-                <Link display={{ base: "none", md: 'flex' }} href={"https://www.linkedin.com/in/luthernmr/"} isExternal>CONTACT</Link>
+            <HStack fontSize={'2xl'} spacing={10}>
+                <Link
+                    href="#accueil"
+                    sx={{
+                        textDecoration: activeLink === "#accueil" ? "underline" : "none",
+                        textDecorationColor: activeLink === "#accueil" ? "#B131FA" : "transparent",
+                        textUnderlineOffset: "10px",
+                        transition: "text-decoration-color 0.1s, text-decoration 0.1s",
+                    }}
+                    onClick={() => handleLinkClick("#accueil")}
+                >
+                    ACCUEIL
+                </Link>
+                <Link
+                    href="#presentation"
+                    sx={{
+                        textDecoration: activeLink === "#presentation" ? "underline" : "none",
+                        textDecorationColor: activeLink === "#presentation" ? "#B131FA" : "transparent",
+                        textUnderlineOffset: "10px",
+                        transition: "text-decoration-color 0.1s, text-decoration 0.1s",
+                    }}
+                    onClick={() => handleLinkClick("#presentation")}
+                >
+                    PRESENTATION
+                </Link>
+                <Link
+                    href="#portfolio"
+                    sx={{
+                        textDecoration: activeLink === "#portfolio" ? "underline" : "none",
+                        textDecorationColor: activeLink === "#portfolio" ? "#B131FA" : "transparent",
+                        textUnderlineOffset: "10px",
+                        transition: "text-decoration-color 0.1s, text-decoration 0.1s",
+                    }}
+                    onClick={() => handleLinkClick("#portfolio")}
+                >
+                    PORTFOLIO
+                </Link>
+                <Link
+                    href="#livre-blanc"
+                    sx={{
+                        textDecoration: activeLink === "#livre-blanc" ? "underline" : "none",
+                        textDecorationColor: activeLink === "#livre-blanc" ? "#B131FA" : "transparent",
+                        textUnderlineOffset: "10px",
+                        transition: "text-decoration-color 0.1s, text-decoration 0.1s",
+                    }}
+                    onClick={() => handleLinkClick("#livre-blanc")}
+                >
+                    LIVRE BLANC
+                </Link>
+                <Button fontSize={'2xl'} pl={10} pr={10} rounded={"full"} backgroundColor={"#B131FA"} color={"white"} _hover={{ opacity: "50%" }}>CONTACT</Button>
             </HStack>
         </HStack>
     )

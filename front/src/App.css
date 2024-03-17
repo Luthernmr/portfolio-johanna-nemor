@@ -1,0 +1,8 @@
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-10px); /* Déplace l'icône vers le haut */
+  }
+  50% {
+    transform: translateY(10px); /* Déplace l'icône vers le bas */
+  }
+}
