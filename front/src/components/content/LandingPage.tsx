@@ -18,16 +18,15 @@ export default function LandingPage() {
                         <Button backgroundColor={"#353244"} color={"white"} rounded={"full"} width={"10em"} boxShadow="0px 2px 6px rgba(0, 0, 0, 0.5)" fontSize={"xl"}>Découvrir mon portfolio</Button>
                     </Flex>
                 </Flex>
-                    <Center width={"100%"} position={"absolute"} bottom={0} left={"-25%"} zIndex={5}>
-                        <Link href="#expertises" >
-                            < ChevronDownIcon boxSize={20} color={"#B131FA"} animation="bounce 1.5s infinite" />
-                        </Link>
-                    </Center>
+                <Center width={"100%"} position={"absolute"} bottom={0} left={"-25%"} zIndex={5}>
+                    <Link href="#expertises" >
+                        < ChevronDownIcon boxSize={20} color={"#B131FA"} animation="bounce 1.5s infinite" />
+                    </Link>
+                </Center>
             </Box>
-            <Box blockSize={"100%"}>
-                    <Image  src='/fond-pa.png' boxSize={"100%"} objectFit="contain" objectPosition="bottom"/>
+            <Box blockSize={"100%"} height={"100%"} display="flex" alignItems="flex-end">
+                <Image src='/photo_joh_page_accueil.png' objectFit="cover" />
             </Box>
-
         </Flex>
     )
 }
