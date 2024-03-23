@@ -1,13 +1,12 @@
 import { Box, Image, Center, Text, Heading, Flex } from '@chakra-ui/react'
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef, useEffect } from 'react';
+import { useEffect } from 'react';
 
 
 export default function Experiences() {
     gsap.registerPlugin(ScrollTrigger)
 
-    const boxRef = useRef(null);
 
     useEffect(() => {
         // Configuration de GSAP pour l'animation
