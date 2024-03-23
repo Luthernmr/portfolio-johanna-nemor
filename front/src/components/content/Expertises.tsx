@@ -8,9 +8,9 @@ export default function Expertises() {
         { img: "/conduite_du_changement.png", title: "Conduite du changement", skills: "Accompagner - Planifier - Communiquer" }
     ]
     return (
-        <Flex height={"100vh"} backgroundColor={"#353244"} width={"100%"} flexDirection={"row"} id='expertises'>
-            <Center flexDirection={"row"} width={"50%"}>
-                <VStack w={"100%"} spacing={5}>
+        <Flex height={"100vh"} backgroundColor={"#353244"} width={"100%"} flexDirection={{base:"column-reverse", lg:"row"}} id='expertises'>
+            <Center flexDirection={"row"} width={{base:"100%", lg:"50%"}} h={"100%"}>
+                <VStack w={"100%"} spacing={5} border={"2px solid"}>
                     {expertises.map((elem) => (
                         <Flex backgroundColor={"#FAF8FA"} borderRadius={"15px"} h={"20%"} minW={"80%"} maxW={"80%"} flexDirection={"row"} alignContent={'center'} p={4}
                             transform="translateX(0)"
@@ -20,22 +20,20 @@ export default function Expertises() {
                             }}
                         >
                             <Box height={'100%'} >
-                                <Image boxSize={'120px'} objectFit="cover" filter={"drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));"} src={elem.img} />
+                                <Image boxSize={{base:"70px",lg:'120px'}} objectFit="cover" filter={"drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));"} src={elem.img} />
                             </Box>
                             <Box width={"70%"} alignContent={'center'} ml={8}>
-                                <Text fontSize={'40px'} fontWeight={'bold'} color={'#B131FA'}>{elem.title}</Text>
-                                <Text fontSize={'32px'} color={"#353244"}>{elem.skills}</Text>
+                                <Text fontSize={{base:"xl",lg:'40px'}} fontWeight={'bold'} color={'#B131FA'}>{elem.title}</Text>
+                                <Text fontSize={{base:"md", lg:'32px'}} color={"#353244"}>{elem.skills}</Text>
                             </Box>
                         </Flex>
                     ))}
                 </VStack>
             </Center>
-            <Box width={"50%"} h={'100%'} overflow={'hidden'}>
-                <Flex textAlign={"center"} flexDirection={'column'} alignItems="center" justifyContent={"space-between"} height={"100%"}>
-                    <Heading mt="10vh" size={"4xl"} color="white">MES EXPERTISES</Heading>
-                    <Image height={"100%"} boxSize={"70%"} objectFit="fill" src='photo_joh_expertises.png' />
+                <Flex textAlign={"center"} flexDirection={'column'} alignItems="center" justifyContent={"space-between"}  border={"2px solid red"} height={{base:"20%", lg:"100%"}}>
+                    <Heading mt="10vh" size={{base:"2xl", lg:"4xl"}} color="white">MES EXPERTISES</Heading>
+                    <Image display={{base: "none", lg:"flex"}} height={"100%"} boxSize={"70%"} objectFit="cover" src='photo_joh_expertises.png' />
                 </Flex >
-            </Box>
         </Flex>
     )
 }
