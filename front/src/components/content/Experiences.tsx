@@ -13,7 +13,6 @@ export default function Experiences() {
         // Configuration de GSAP pour l'animation
         gsap.registerPlugin(ScrollTrigger);
 
-        const box = boxRef.current;
 
         // Créer l'animation avec GSAP
         const boxes = document.querySelectorAll('.exp');
@@ -35,7 +34,6 @@ export default function Experiences() {
                         start: 'top 80%',
                         end: 'bottom 50%',
                         toggleActions: 'play none none reverse',
-                        markers: true
                     }
                 }
             );
