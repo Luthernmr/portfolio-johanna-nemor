@@ -10,7 +10,7 @@ export default function Expertises() {
     return (
         <Flex height={"100vh"} backgroundColor={"#353244"} width={"100%"} flexDirection={{base:"column-reverse", lg:"row"}} id='expertises'>
             <Center flexDirection={"row"} width={{base:"100%", lg:"50%"}} h={"100%"}>
-                <VStack w={"100%"} spacing={5} border={"2px solid"}>
+                <VStack w={"100%"} spacing={5}>
                     {expertises.map((elem) => (
                         <Flex backgroundColor={"#FAF8FA"} borderRadius={"15px"} h={"20%"} minW={"80%"} maxW={"80%"} flexDirection={"row"} alignContent={'center'} p={4}
                             transform="translateX(0)"
@@ -30,7 +30,7 @@ export default function Expertises() {
                     ))}
                 </VStack>
             </Center>
-                <Flex textAlign={"center"} flexDirection={'column'} alignItems="center" justifyContent={"space-between"}  border={"2px solid red"} height={{base:"20%", lg:"100%"}}>
+                <Flex textAlign={"center"} flexDirection={'column'} alignItems="center" justifyContent={"space-between"}  height={{base:"20%", lg:"100%"}}>
                     <Heading mt="10vh" size={{base:"2xl", lg:"4xl"}} color="white">MES EXPERTISES</Heading>
                     <Image display={{base: "none", lg:"flex"}} height={"100%"} boxSize={"70%"} objectFit="cover" src='photo_joh_expertises.png' />
                 </Flex >
