@@ -12,7 +12,7 @@ export default function Header() {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
-        <HStack h={"10vh"} justifyContent={"space-between"} width={"100%"} mb={"2vh"}>
+        <HStack h={{base:"10vh"}} justifyContent={"space-between"} width={"100%"} mb={"2vh"}>
             <Image boxSize={'70px'} src='/Logo_jn.png' />
             <HStack fontSize={'2xl'} spacing={10} display={{ base: "none", lg: "flex" }}>
                 {header.map((elem) => (

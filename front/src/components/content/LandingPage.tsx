@@ -8,9 +8,9 @@ export default function LandingPage() {
             <Box position={"relative"} w={{ base: "100%", lg: "40%" }} height={"100%"}  mb={{base:"5", lg:"0"}}>
                 <Flex justifyContent={"space-evenly"} flexDirection={"column"} h={"100%"} >
                     <Flex flexDirection={"column"}>
-                        <Text fontSize={"32px"}>Bonjour, je suis</Text>
-                        <Heading fontSize={{ base: "3em", lg: "4em" }}>JOHANNA</Heading>
-                        <Text fontSize={{ base: "2xl" }} color="#B131FA">Experte en communication & marketing </Text>
+                        <Text fontSize={{base:"xl",lg:"32px"}}>Bonjour, je suis</Text>
+                        <Heading fontSize={{ base: "2em", lg: "4em" }}>JOHANNA</Heading>
+                        <Text fontSize={{ base: "xl" }} color="#B131FA">Experte en communication & marketing </Text>
                     </Flex>
                     <Flex flexDirection={"column"} display={{ base: 'none', lg: "flex" }}>
                         <Button backgroundColor={"#B131FA"} color={"white"} rounded={"full"} width={"10em"} mb={5} boxShadow="0px 2px 6px rgba(0, 0, 0, 0.5)" fontSize={"xl"}>Télécharger mon  CV</Button>
