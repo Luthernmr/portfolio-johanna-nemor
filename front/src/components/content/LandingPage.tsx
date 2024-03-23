@@ -5,16 +5,16 @@ import { ChevronDownIcon } from '@chakra-ui/icons'
 export default function LandingPage() {
     return (
         <Flex backgroundColor={"white"} height={"85vh"} maxH={"85vh"} borderRadius="30px 30px 0 0" overflow={'hidden'} pl={8} pt={8} pr={8} flexDirection={{ base: "column", lg: "row" }} justifyContent={"space-around"}  >
-            <Box position={"relative"} w={{ base: "100%", lg: "40%" }} height={"100%"}  mb={{base:"5", lg:"0"}}>
+            <Box position={"relative"} w={{ base: "100%", lg: "40%" }} height={"100%"}  mb={{base:"2", lg:"0"}}>
                 <Flex justifyContent={"space-evenly"} flexDirection={"column"} h={"100%"} >
-                    <Flex flexDirection={"column"}>
-                        <Text fontSize={{base:"xl",lg:"32px"}}>Bonjour, je suis</Text>
+                    <Flex flexDirection={"column"} lineHeight={"1"}>
+                        <Text fontSize={{base:"2xl",lg:"4xl"}}>Bonjour, je suis</Text>
                         <Heading fontSize={{ base: "2em", lg: "4em" }}>JOHANNA</Heading>
-                        <Text fontSize={{ base: "xl" }} color="#B131FA">Experte en communication & marketing </Text>
+                        <Text fontSize={{ base: "2xl", lg:"4xl" }} color="#B131FA">Experte en communication & marketing </Text>
                     </Flex>
                     <Flex flexDirection={"column"} display={{ base: 'none', lg: "flex" }}>
-                        <Button backgroundColor={"#B131FA"} color={"white"} rounded={"full"} width={"10em"} mb={5} boxShadow="0px 2px 6px rgba(0, 0, 0, 0.5)" fontSize={"xl"}>Télécharger mon  CV</Button>
-                        <Button backgroundColor={"#353244"} color={"white"} rounded={"full"} width={"10em"} boxShadow="0px 2px 6px rgba(0, 0, 0, 0.5)" fontSize={"xl"}>Découvrir mon portfolio</Button>
+                        <Button backgroundColor={"#B131FA"} color={"white"} rounded={"full"} width={"15em"} mb={5} boxShadow="0px 2px 6px rgba(0, 0, 0, 0.5)" fontSize={"xl"}>Télécharger mon  CV</Button>
+                        <Button backgroundColor={"#353244"} color={"white"} rounded={"full"} width={"15em"} boxShadow="0px 2px 6px rgba(0, 0, 0, 0.5)" fontSize={"xl"}>Découvrir mon portfolio</Button>
                     </Flex>
                 </Flex>
                 <Center width={"100%"} position={"absolute"} bottom={0} left={"-25%"} zIndex={5} display={{ base: 'none', lg: "flex" }}>

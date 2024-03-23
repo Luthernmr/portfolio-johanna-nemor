@@ -13,7 +13,7 @@ export default function Header() {
 
     return (
         <HStack h={{base:"10vh"}} justifyContent={"space-between"} width={"100%"} mb={"2vh"}>
-            <Image boxSize={'70px'} src='/Logo_jn.png' />
+            <Image boxSize={{base:"50px", lg:'70px'}} src='/Logo_jn.png' />
             <HStack fontSize={'2xl'} spacing={10} display={{ base: "none", lg: "flex" }}>
                 {header.map((elem) => (
                     <Link
