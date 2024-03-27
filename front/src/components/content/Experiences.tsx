@@ -40,12 +40,15 @@ export default function Experiences() {
     }, []);
 
     return (
+        <>
         <Flex backgroundColor="#FAF8FA" height={"100vh"} maxH="100vh" width={"100%"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"}>
             <Center height={"20%"}>
 
                 <Heading textAlign={"center"} size={"3xl"} color={"#353244"}>MES EXPERIENCES</Heading>
             </Center>
-            <Flex width="100%" justifyContent={{ base: "center", lg: "space-between" }} alignItems={{ base: "center", lg: "start" }} alignContent={"center"} >
+            <Image border="2px solid"   height="100%" position={"relative"} bottom={"0px"} src='/experience.png' display={{ base: "flex", lg: "none" }}/>
+
+            <Flex width="100%" justifyContent={{ base: "center", lg: "space-between" }} alignItems={{ base: "center", lg: "start" }} alignContent={"center"}  display={{ base: "none", lg: "flex" }}>
                 <Flex flexDirection={'column'} width={"100%"} alignItems={"end"} height={"70%"} justifyContent={"space-between"} mt={"2vh"} display={{ base: "none", lg: "flex" }}>
                     <Box _hover={{
                         transform: 'scale(1.05)',
@@ -62,7 +65,7 @@ export default function Experiences() {
                                     textShadow: "0px 0px 5px #D180FF"// Appliquer l'ombre au texte au survol
                                 }
                             }}
-                        >
+                            >
                             <Image boxSize="70px" src='/SNCF_Voyageurs.png' />
                             <Box >
                                 <Flex textAlign="end" flexDirection="row" fontSize="32px">
@@ -76,7 +79,7 @@ export default function Experiences() {
                     <Box _hover={{
                         transform: 'scale(1.05)',
                     }}
-                        transition="transform 0.2s ease-in-out">
+                    transition="transform 0.2s ease-in-out">
 
                         <Flex position={"relative"} right={"-15%"} className='exp'
                             _hover={{
@@ -97,7 +100,7 @@ export default function Experiences() {
                     <Box _hover={{
                         transform: 'scale(1.05)',
                     }}
-                        transition="transform 0.2s ease-in-out">
+                    transition="transform 0.2s ease-in-out">
 
                         <Flex position={"relative"} right={"5%"} className='exp'>
                             <Image boxSize={"70px"} src='/Direct_market.png' />
@@ -132,5 +135,6 @@ export default function Experiences() {
             </Flex>
 
         </Flex>
+                                    </>
     )
 }

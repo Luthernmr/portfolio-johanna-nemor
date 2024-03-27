@@ -1,30 +1,42 @@
 import { HamburgerIcon } from '@chakra-ui/icons';
-import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, HStack, Image, Link, VStack, useDisclosure } from '@chakra-ui/react'
+import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, HStack, Image, VStack, useDisclosure } from '@chakra-ui/react'
 import { useState } from 'react'
+import { Link as ReactRouterLink } from 'react-router-dom'
+import { Link as ChakraLink } from '@chakra-ui/react'
+
+
+
 export default function Header() {
 
-    const header = ["ACCUEIL", "PRESENTATION", "PORTFOLIO", "LIVRE BLANC"]
-    const [activeLink, setActiveLink] = useState("#accueil"); // Définissez le lien actif par défaut sur la page d'accueil
+    const header = [
+        { name: "ACCUEIL", link: "/" },
+        { name: "PRESENTATION", link: "/presentation" },
+        { name: "PORTFOLIO", link: "/portfolio" },
+        { name: "LIVRE BLANC", link: "/livre-blanc" },
+    ]
+    const [activeLink, setActiveLink] = useState("/"); // Définissez le lien actif par défaut sur la page d'accueil
     // Fonction pour mettre à jour le lien actif lorsque vous cliquez sur un lien
     const handleLinkClick = (hash: any) => {
         setActiveLink(hash);
     };
     const { isOpen, onOpen, onClose } = useDisclosure()
 
+
     return (
-        <HStack h={{base:"10vh"}} justifyContent={"space-between"} width={"100%"} mb={"2vh"}>
-            <Image boxSize={{base:"50px", lg:'70px'}} src='/Logo_jn.png' />
+        <HStack  h="10vh" justifyContent={"space-between"} width={"100%"} mb={"2vh"}>
+            <Image boxSize={{ base: "50px", lg: '70px' }} src='/Logo_jn.png' />
             <HStack fontSize={'2xl'} spacing={10} display={{ base: "none", lg: "flex" }}>
-                {header.map((elem) => (
-                    <Link
-                        href={"#" + elem.toLowerCase()}
+                {header.map((elem, index) => (
+                    <ChakraLink as={ReactRouterLink}
+                        key={index}
+                        to={ elem.link}
                         sx={{
-                            textDecoration: activeLink === `${"#" + elem.toLowerCase()}` ? "underline" : "none",
-                            textDecorationColor: activeLink === `${"#" + elem.toLowerCase()}` ? "#B131FA" : "transparent",
+                            textDecoration: activeLink === `${elem.link}` ? "underline" : "none",
+                            textDecorationColor: activeLink === `${elem.link}` ? "#B131FA" : "transparent",
                             textUnderlineOffset: "10px",
                             transition: "text-decoration-color 0.1s, text-decoration 0.1s",
                         }}
-                        onClick={() => handleLinkClick(`"${"#" + elem.toLowerCase()}"`)}
+                        onClick={() => handleLinkClick(`"${elem.link}"`)}
                         css={{
                             boxShadow: "inset 0 0 0 0 #B131FA",
                             color: "#B131FA",
@@ -34,11 +46,12 @@ export default function Header() {
                         }}
                         _hover={{ boxShadow: "inset 100px 0 0 0 #B131FA", color: "white" }}
                     >
-                        {elem}
-                    </Link>
+                        {elem.name}
+                    </ChakraLink>
 
                 ))}
                 <Button fontSize={'2xl'} pl={10} pr={10} rounded={"full"} backgroundColor={"#B131FA"} color={"white"} _hover={{ opacity: "50%" }}>CONTACT</Button>
+            
             </HStack>
             <Box display={{ base: "flex", lg: "none" }}>
                 <HamburgerIcon
@@ -53,19 +66,20 @@ export default function Header() {
                         <DrawerCloseButton />
                         <DrawerHeader></DrawerHeader>
                         <DrawerBody>
-                            <Flex flexDirection={"column"} justifyContent={"space-around"} height={"100%"}alignItems={"center"}>
+                            <Flex flexDirection={"column"} justifyContent={"space-around"} height={"100%"} alignItems={"center"}>
 
                                 <VStack fontSize={'2xl'} spacing={10} display={{ base: "flex", lg: "none" }}>
-                                    {header.map((elem) => (
-                                        <Link
-                                            href={"#" + elem.toLowerCase()}
+                                    {header.map((elem, index) => (
+                                        <ChakraLink  as={ReactRouterLink}
+                                            key={index}
+                                           to={elem.link}
                                             sx={{
-                                                textDecoration: activeLink === `${"#" + elem.toLowerCase()}` ? "underline" : "none",
-                                                textDecorationColor: activeLink === `${"#" + elem.toLowerCase()}` ? "#B131FA" : "transparent",
+                                                textDecoration: activeLink === `${elem.link}` ? "underline" : "none",
+                                                textDecorationColor: activeLink === `${elem.link}` ? "#B131FA" : "transparent",
                                                 textUnderlineOffset: "10px",
                                                 transition: "text-decoration-color 0.1s, text-decoration 0.1s",
                                             }}
-                                            onClick={() => handleLinkClick(`"${"#" + elem.toLowerCase()}"`)}
+                                            onClick={() => handleLinkClick(`"${elem.link}"`)}
                                             css={{
                                                 boxShadow: "inset 0 0 0 0 #B131FA",
                                                 color: "#B131FA",
@@ -75,8 +89,8 @@ export default function Header() {
                                             }}
                                             _hover={{ boxShadow: "inset 100px 0 0 0 #B131FA", color: "white" }}
                                         >
-                                            {elem}
-                                        </Link>
+                                            {elem.name}
+                                        </ChakraLink>
 
                                     ))}
                                 </VStack>

@@ -7,6 +7,18 @@ import './index.css'
 import '@fontsource/yanone-kaffeesatz';
 
 const theme = extendTheme({
+  colors: {
+    
+    
+    mypurple: {
+      100: '#353244',
+      200:'#FFFFF',
+      800 : "#FFFFF"
+    },
+    whity: {
+      500: "#FFFFF", // Remplacez 'yourTagColor' par la couleur que vous souhaitez pour le tag
+    },
+  },
   fonts: {
     heading: `'Open Sans', sans-serif`,
     body: `'Yanone Kaffeesatz', sans-serif`,
@@ -18,6 +30,7 @@ const theme = extendTheme({
       },
     },
   },
+  
 })
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
