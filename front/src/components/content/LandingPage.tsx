@@ -4,7 +4,7 @@ import { ChevronDownIcon } from '@chakra-ui/icons'
 
 export default function LandingPage() {
     return (
-        <Flex backgroundColor={"white"} height={"85vh"} maxH={"85vh"} borderRadius="30px 30px 0 0" overflow={'hidden'} pl={8} pt={8} pr={8} flexDirection={{ base: "column", lg: "row" }} justifyContent={"space-around"} >
+        <Flex backgroundColor={"#FFFFF8"} height={"85vh"} maxH={"85vh"} borderRadius="30px 30px 0 0" overflow={'hidden'} pl={8} pt={8} pr={8} flexDirection={{ base: "column", lg: "row" }} justifyContent={"space-around"} >
             <Box position={"relative"} w={{ base: "100%", lg: "40%" }} height={"100%"}  mb={{base:"2", lg:"0"}}>
                 <Flex justifyContent={"space-evenly"} flexDirection={"column"} h={"100%"} >
                     <Flex flexDirection={"column"} lineHeight={"1"}>

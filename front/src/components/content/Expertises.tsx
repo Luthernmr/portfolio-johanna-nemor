@@ -15,9 +15,6 @@ export default function Expertises() {
                         <Flex backgroundColor={"#FAF8FA"} borderRadius={"15px"} h={"20%"} minW={"80%"} maxW={"80%"} flexDirection={"row"} alignContent={'center'} p={4}
                             transform="translateX(0)"
                             transition="all 0.4s ease"
-                            _hover={{
-                                transform: "translateX(100px)"
-                            }}
                             key={index}
                         >
                             <Box height={'100%'} >
