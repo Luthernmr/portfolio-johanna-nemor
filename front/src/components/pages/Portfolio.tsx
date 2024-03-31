@@ -6,7 +6,7 @@ const categorys = ["print", "strategies", "graphics", "video", "podcast", "event
 export default function portfolio() {
     const fontSize = useBreakpointValue({ base: "sm", lg: "lg" });
     return (
-        <Flex flexDirection={"column"} minH={"100vh"} width={"100%"} border={'1px'} backgroundColor={"#B131FA"}>
+        <Flex flexDirection={"column"} minH={"100vh"} width={"100%"} backgroundColor={"#B131FA"}>
             <Center flexDirection={"column"}>
                 <Heading mt="10vh" mb="10vh" size={{ base: "2xl", lg: "3xl" }} color="white">MES PROJETS</Heading>
                 <Tabs variant='soft-rounded' colorScheme={"purple"} width={{base:"97vw", lg:"70vw"}}>
