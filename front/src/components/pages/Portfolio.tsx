@@ -42,7 +42,6 @@ export default function portfolio() {
                                     ))}
                             </TabPanel>
                         ))}
-
                     </TabPanels>
                 </Tabs>
             </Center>

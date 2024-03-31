@@ -8,7 +8,7 @@ export default function Expertises() {
         { img: "/conduite_du_changement.png", title: "Conduite du changement", skills: "Accompagner - Planifier - Communiquer" }
     ]
     return (
-        <Flex height={"100vh"} backgroundColor={"#353244"} width={"100%"} flexDirection={{ base: "column-reverse", lg: "row" }} id='expertises'>
+        <Flex height={"100vh"} backgroundColor={"#353244"} width={"100vw"} flexDirection={{ base: "column-reverse", lg: "row" }} id='expertises'>
             <Center flexDirection={"row"} width={{ base: "100%", xl: "50%" }} h={"100%"}>
                 <VStack w={"100%"} spacing={5}>
                     {expertises.map((elem, index) => (
@@ -20,9 +20,9 @@ export default function Expertises() {
                             <Box height={'100%'} >
                                 <Image boxSize={{ base: "70px", xl: '120px' }} objectFit="cover" filter={"drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));"} src={elem.img} />
                             </Box>
-                            <Box width={"70%"} alignContent={'center'} ml={8}>
-                                <Text fontSize={{ base: "xl", xl: '40px' }} fontWeight={'bold'} color={'#B131FA'}>{elem.title}</Text>
-                                <Text fontSize={{ base: "md", xl: '32px' }} color={"#353244"}>{elem.skills}</Text>
+                            <Box width={"100%"} alignContent={'center'} ml={8}>
+                                <Text fontSize={{ base: "xl", lg: '4xl' }} fontWeight={'bold'} color={'#B131FA'}>{elem.title}</Text>
+                                <Text  fontSize={{ base: "md", xl: '2xl' }} color={"#353244"}>{elem.skills}</Text>
                             </Box>
                         </Flex>
                     ))}
