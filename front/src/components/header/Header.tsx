@@ -10,7 +10,6 @@ export default function Header() {
 
     const header = [
         { name: "ACCUEIL", link: "/" },
-        { name: "PRESENTATION", link: "/presentation" },
         { name: "PORTFOLIO", link: "/portfolio" },
         { name: "LIVRE BLANC", link: "/livre-blanc" },
     ]
