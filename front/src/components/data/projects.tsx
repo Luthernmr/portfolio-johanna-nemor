@@ -2,7 +2,7 @@ export const projects = [
     {
         category: "print",
         title: "Journée Européenne du Patrimoine 2023",
-        description: "Dans le cadre de la Journée Européenne du Patrimoine 2023, j'ai eu la responsabilité de créer l'ensemble des supports print pour l'événement organisé par SNCF. J'ai réalisé les supports suivants : Exposition: conception des panneaux d'information, des visuels et des illustrations. Étiquettes à bagage personnalisées: création d'un design original et unique pour l'événement. Kakémono: réalisation d'une banderole informative et attractive. Pour ce projet, j'ai pris en charge : La définition de la charte graphique Le choix des supports et des formats La rédaction des contenus La création des visuels et des illustrations La mise en page et le suivi de l'impression",
+        description: "Dans le cadre de la Journée Européenne du Patrimoine 2023, j'ai eu la responsabilité de créer l'ensemble des supports print pour l'événement organisé par SNCF.\nJ'ai réalisé les supports suivants : Exposition: conception des panneaux d'information, des visuels et des illustrations.Étiquettes à bagage personnalisées: création d'un design original et unique pour l'événement. Kakémono: réalisation d'une banderole informative et attractive. Pour ce projet, j'ai pris en charge : La définition de la charte graphique Le choix des supports et des formats La rédaction des contenus La création des visuels et des illustrations La mise en page et le suivi de l'impression",
         img: "/PORTFOLIO/PRINT_JEP.jpg"
     },
     {

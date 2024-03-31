@@ -9,7 +9,7 @@ export default function Expertises() {
     ]
     return (
         <Flex height={"100vh"} backgroundColor={"#353244"} width={"100%"} flexDirection={{ base: "column-reverse", lg: "row" }} id='expertises'>
-            <Center flexDirection={"row"} width={{ base: "100%", lg: "50%" }} h={"100%"}>
+            <Center flexDirection={"row"} width={{ base: "100%", xl: "50%" }} h={"100%"}>
                 <VStack w={"100%"} spacing={5}>
                     {expertises.map((elem, index) => (
                         <Flex backgroundColor={"#FAF8FA"} borderRadius={"15px"} h={"20%"} minW={"80%"} maxW={"80%"} flexDirection={"row"} alignContent={'center'} p={4}
@@ -18,18 +18,18 @@ export default function Expertises() {
                             key={index}
                         >
                             <Box height={'100%'} >
-                                <Image boxSize={{ base: "70px", lg: '120px' }} objectFit="cover" filter={"drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));"} src={elem.img} />
+                                <Image boxSize={{ base: "70px", xl: '120px' }} objectFit="cover" filter={"drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));"} src={elem.img} />
                             </Box>
                             <Box width={"70%"} alignContent={'center'} ml={8}>
-                                <Text fontSize={{ base: "xl", lg: '40px' }} fontWeight={'bold'} color={'#B131FA'}>{elem.title}</Text>
-                                <Text fontSize={{ base: "md", lg: '32px' }} color={"#353244"}>{elem.skills}</Text>
+                                <Text fontSize={{ base: "xl", xl: '40px' }} fontWeight={'bold'} color={'#B131FA'}>{elem.title}</Text>
+                                <Text fontSize={{ base: "md", xl: '32px' }} color={"#353244"}>{elem.skills}</Text>
                             </Box>
                         </Flex>
                     ))}
                 </VStack>
             </Center>
             <Flex textAlign={"center"} flexDirection={'column'} alignItems="center" justifyContent={"space-between"} height={{ base: "20%", lg: "100%" }}>
-                <Heading mt="10vh" size={{ base: "2xl", lg: "4xl" }} color="white">MES EXPERTISES</Heading>
+                <Heading mt="10vh" size={{ base: "2xl", xl: "3xl" }} color="white">MES EXPERTISES</Heading>
                 <Image display={{ base: "none", lg: "flex" }} height={"100%"} boxSize={"70%"} objectFit="cover" src='photo_joh_expertises.png' />
             </Flex >
         </Flex>

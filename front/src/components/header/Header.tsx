@@ -1,5 +1,5 @@
 import { HamburgerIcon } from '@chakra-ui/icons';
-import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, HStack, Image, VStack, useDisclosure } from '@chakra-ui/react'
+import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, HStack, Image, Link, VStack, useDisclosure } from '@chakra-ui/react'
 import { useState } from 'react'
 import { Link as ReactRouterLink } from 'react-router-dom'
 import { Link as ChakraLink } from '@chakra-ui/react'
@@ -18,6 +18,7 @@ export default function Header() {
     // Fonction pour mettre à jour le lien actif lorsque vous cliquez sur un lien
     const handleLinkClick = (hash: any) => {
         setActiveLink(hash);
+        onClose();
     };
     const { isOpen, onOpen, onClose } = useDisclosure()
 
@@ -50,10 +51,10 @@ export default function Header() {
                     </ChakraLink>
 
                 ))}
-                <Button fontSize={'2xl'} pl={10} pr={10} rounded={"full"} backgroundColor={"#B131FA"} color={"white"} _hover={{ opacity: "50%" }}>CONTACT</Button>
+                <Button as={Link} href="mailto:jrevert06@gmail.com" fontSize={'2xl'} pl={10} pr={10} rounded={"full"} backgroundColor={"#B131FA"} color={"white"} _hover={{ opacity: "50%" }}>CONTACT</Button>
             
             </HStack>
-            <Box display={{ base: "flex", lg: "none" }}>
+            <Box display={{ base: "flex", lg: "none" }} >
                 <HamburgerIcon
                     color="#B131FA"
                     boxSize={10} // Définissez la taille de l'icône selon vos besoins
