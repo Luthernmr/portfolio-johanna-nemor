@@ -62,7 +62,7 @@ export default function Experiences() {
     return (
         <Flex backgroundColor="#FAF8FA" height={"100vh"} maxH="100vh" width={"100%"} flexDirection={"column"} justifyContent={"end"} alignItems={"center"}>
             <Center h={'100%'} mt={"10vh"}>
-                <Heading  textAlign={"center"} size={"3xl"} color={"#353244"}>MES EXPERIENCES</Heading>
+                <Heading  textAlign={"center"} size={{base: "xl", lg:"3xl"}}  color={"#353244"}>MES EXPERIENCES</Heading>
             </Center>
             <Image   height="100%" position={"relative"} bottom={"0px"} src='/experience.png' display={{ base: "flex", lg: "none" }}/>
 

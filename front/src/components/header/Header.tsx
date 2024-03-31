@@ -25,7 +25,9 @@ export default function Header() {
 
     return (
         <HStack  h="10vh" justifyContent={"space-between"} width={"100%"} mb={"2vh"}>
-            <Image boxSize={{ base: "50px", lg: '70px' }} src='/Logo_jn.png' />
+            <ChakraLink as={ReactRouterLink} to={"/"}>
+                <Image boxSize={{ base: "50px", lg: '70px' }} src='/Logo_jn.png' />
+            </ChakraLink>
             <HStack fontSize={'2xl'} spacing={10} display={{ base: "none", lg: "flex" }}>
                 {header.map((elem, index) => (
                     <ChakraLink as={ReactRouterLink}

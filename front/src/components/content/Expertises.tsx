@@ -29,7 +29,7 @@ export default function Expertises() {
                 </VStack>
             </Center>
             <Flex textAlign={"center"} flexDirection={'column'} alignItems="center" justifyContent={"space-between"} height={{ base: "20%", lg: "100%" }}>
-                <Heading mt="10vh" size={{ base: "2xl", xl: "3xl" }} color="white">MES EXPERTISES</Heading>
+                <Heading mt="10vh" size={{base: "xl", lg:"3xl"}}  color="white">MES EXPERTISES</Heading>
                 <Image display={{ base: "none", lg: "flex" }} height={"100%"} boxSize={"70%"} objectFit="cover" src='photo_joh_expertises.png' />
             </Flex >
         </Flex>
