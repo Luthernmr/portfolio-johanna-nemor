@@ -8,11 +8,11 @@ export default function Expertises() {
         { img: "/conduite_du_changement.png", title: "Conduite du changement", skills: "Accompagner - Planifier - Communiquer" }
     ]
     return (
-        <Flex height={"100vh"} backgroundColor={"#353244"} width={"100vw"} flexDirection={{ base: "column-reverse", lg: "row" }} id='expertises'>
+        <Flex height={"100vh"} backgroundColor={"#353244"} width={"100vw"} maxW={"100vw"} flexDirection={{ base: "column-reverse", lg: "row" }} id='expertises'>
             <Center flexDirection={"row"} width={{ base: "100%", xl: "50%" }} h={"100%"}>
                 <VStack w={"100%"} spacing={5}>
                     {expertises.map((elem, index) => (
-                        <Flex backgroundColor={"#FAF8FA"} borderRadius={"15px"} h={"20%"} minW={"80%"} maxW={"80%"} flexDirection={"row"} alignContent={'center'} p={4}
+                        <Flex backgroundColor={"#FAF8FA"} borderRadius={"15px"} h={"20%"} minW={"80%"} maxW={"80%"} flexDirection={"row"} alignContent={'center'} p={2}
                             transform="translateX(0)"
                             transition="all 0.4s ease"
                             key={index}

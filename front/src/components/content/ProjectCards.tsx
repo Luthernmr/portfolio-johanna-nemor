@@ -109,7 +109,7 @@ const DesktopCarousel = () => {
                     <Box>
                         <Slider>
                             {projects.map((elem, index) => (
-                                <Slide index={index}>
+                                <Slide index={index} className='slide'>
                                     <Flex
                                         width={"90%"}
                                         height={"100%"}
@@ -122,7 +122,7 @@ const DesktopCarousel = () => {
                                             ".overlay": {
                                                 opacity: 1,
                                                 rounded: "full",
-                                                boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.5)"
+                                                boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.5)",
                                             },
                                             ".overlay2": {
                                                 opacity: 1,
@@ -130,7 +130,8 @@ const DesktopCarousel = () => {
                                             },
                                             ".img": {
                                                 opacity: 0.8,
-                                            }
+                                                
+                                            },
                                         }}
                                     >
                                         <Image
