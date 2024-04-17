@@ -51,7 +51,7 @@ export const projects = [
         category: "newsletter",
         title: "Newsletter - SNCF Voyageurs (ESV TGV RA)",
         description: "En tant que chargée de communication interne chez SNCF Voyageurs, j’ai conçu et rédigé une newsletter interne bimensuelle. J’ai veillé à ce que la newsletter soit bien structurée, facile à lire et adaptée aux besoins et aux attentes des collaborateurs.",
-        img: "/PORTFOLIO/"
+        img: "/PORTFOLIO/notfound.jpg"
     },
     {
         category: "newsletter",
@@ -93,7 +93,7 @@ export const projects = [
         category: "strategies",
         title: "Campagne pour la Biennale de Lyon",
         description: "Lors de mon année de B3 en stratégie de communication et marketing, j’ai participé à une compétition entre étudiants pour le brief de la Biennale de Lyon. L’idée était de réaliser un plan d’action afin d’organiser et diffuser un concours international étudiant. Au sein de mon équipe, je me suis chargée de la stratégie globale du plan d’action ainsi que de la diffusion sur les réseaux sociaux.",
-        img: "/PORTFOLIO/COMMUNICATION_BiennaleLyon.jpg"
+        img: "/PORTFOLIO/notfound.jpg"
     },
     {
         category: "crise_management",
@@ -105,7 +105,7 @@ export const projects = [
         category: "veille",
         title: "Veille stratégique et créative pour Blédina",
         description: "J'ai travaillé sur une stratégie de veille fictive pour Blédina. L'objectif était d'identifier les tendances, innovations et attentes des consommateurs pour orienter la communication de la marque. Nous avons défini les buts, les ambitions stratégiques, les axes de veille et un plan d’action. Ce travail a été réalisé dans le cadre de ma troisième année d’étude en stratégie de communication & marketing à l’Ecole Supérieure de Publicité.",
-        img: "/PORTFOLIO/"
+        img: "/PORTFOLIO/notfound.jpg"
     },
     {
         category: "buisness_plan",
@@ -129,7 +129,7 @@ export const projects = [
         category: "web",
         title: "Rédaction web - Mon Cabas Vert",
         description: "En tant que Chargée de Communication 360, j'ai contribué à la croissance de Mon Cabas Vert en ligne en rédigeant des descriptions de produits attractives et informatives pour la marketplace, en optimisant le contenu du site web pour le SEO, en analysant les performances avec Google Analytics et en travaillant sur l’UX/UI du site pour faciliter le parcours client en ligne. J’ai également appris à travailler en étroite collaboration avec une agence web, chargée de développer la marketplace en ligne.",
-        img: "/PORTFOLIO/"
+        img: "/PORTFOLIO/notfound.jpg"
     },
     {
         category: "web",

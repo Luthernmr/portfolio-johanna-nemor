@@ -81,6 +81,7 @@ const MobileCarousel = () => {
     )
 }
 const DesktopCarousel = () => {
+    
     return (
         <Box width={"100%"} justifyContent={"center"} alignContent={"center"} p={10} display={{ base: "none", lg: "block" }}>
             <CarouselProvider

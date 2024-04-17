@@ -1,9 +1,10 @@
 import { Heading, Flex, Tab, TabList, TabPanel, TabPanels, Tabs, Text, Box, Center, Image, Divider, useBreakpointValue } from "@chakra-ui/react";
 import { projects } from "../data/projects";
-
-const categorys = ["all","print", "strategies", "video", "podcast", "events", "community_management", "web", "newsletter", "buisness_plan", "veille", "crise_management", "advergaming" ];
+const categorys = ["all","print", "strategies", "video", "podcast", "community_management", "web", "newsletter", "buisness_plan", "veille", "crise_management", "advergaming" ];
 
 export default function portfolio() {
+
+
     const fontSize = useBreakpointValue({ base: "sm", lg: "lg" });
     return (
         <Flex flexDirection={"column"} minH={"100vh"} width={"100%"}backgroundColor={"#353244"}>
@@ -16,7 +17,6 @@ export default function portfolio() {
                         <Tab fontSize={fontSize} color={"white"}>Stratégies</Tab>
                         <Tab fontSize={fontSize} color={"white"}>Projets vidéo</Tab>
                         <Tab fontSize={fontSize} color={"white"}>Podcast</Tab>
-                        <Tab fontSize={fontSize} color={"white"}>Evenementiel</Tab>
                         <Tab fontSize={fontSize} color={"white"}>Community management</Tab>
                         <Tab fontSize={fontSize} color={"white"}>Web</Tab>
                         <Tab fontSize={fontSize} color={"white"}>Newsletter</Tab>
@@ -42,7 +42,7 @@ export default function portfolio() {
                                                 <Text fontFamily={"Roboto"} fontWeight={"100"} whiteSpace="pre-line" fontSize={{base:"sm", lg:'lg'}}>{project.description}</Text>
                                             </Box>
                                             <Box  width={{base: "100%", lg: '45%'}}  overflow={"hidden"}>
-                                                <Image borderRadius={{base :"0px 0px 10px 10px", lg: index % 2 === 0 ? "0px 10px 10px 0px" : "10px 0px 0px 10px"}} boxSize={"100%"} objectFit={"cover"}transition={"ease-in-out 0.3s"}  _hover={{transform: "scale(1.1)" }} src={project.img} />
+                                                <Image  borderRadius={{base :"0px 0px 10px 10px", lg: index % 2 === 0 ? "0px 10px 10px 0px" : "10px 0px 0px 10px"}} boxSize={"100%"} objectFit={"cover"}transition={"ease-in-out 0.3s"}  _hover={{transform: "scale(1.1)" }} src={project.img} />
                                             </Box>
                                         </Flex>
                                     ))}
