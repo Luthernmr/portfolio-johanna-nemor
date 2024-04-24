@@ -62,7 +62,7 @@ export default function Experiences() {
     return (
         <Flex backgroundColor="#FAF8FA" height={"100vh"} maxH="100vh" width={"100%"} flexDirection={"column"} justifyContent={"end"} alignItems={"center"}>
             <Center h={'100%'} mt={"10vh"}>
-                <Heading  textAlign={"center"} size={{base: "xl", lg:"3xl"}}  color={"#353244"}>MES EXPERIENCES</Heading>
+                <Heading  textAlign={"center"} size={{base: "xl", lg:"2xl"}}  color={"#353244"}>Mes experiences</Heading>
             </Center>
             <Image   height="100%" position={"relative"} bottom={"0px"} src='/experience.png' display={{ base: "flex", lg: "none" }}/>
 
@@ -88,11 +88,11 @@ export default function Experiences() {
                             >
                             <Image mr={4}  boxSize="70px" src='/SNCF_Voyageurs.png' />
                             <Box >
-                                <Flex textAlign="end" flexDirection="row" fontSize="32px">
+                                <Flex textAlign="end" flexDirection="row" fontSize="2xl">
                                     <Text color="#B131FA" className="text-container">SNCF VOYAGEURS </Text>
                                     <Text>- LYON</Text>
                                 </Flex>
-                                <Text color="#353244" fontSize="20">Sept 2022 - Aujourd’hui</Text>
+                                <Text color="#353244" fontSize="xl">Sept 2022 - Aujourd’hui</Text>
                             </Box>
                         </Flex>
                     </Box>
@@ -113,10 +113,10 @@ export default function Experiences() {
                             >
                             <Image mr={4} boxSize={"70px"} src='/Mon_cabas_vert.png' />
                             <Box >
-                                <Flex textAlign={"end"} flexDirection={"row"} fontSize={"32px"}>
+                                <Flex textAlign={"end"} flexDirection={"row"} fontSize={"2xl"}>
                                     <Text color={"#B131FA"} className="text-container">MON CABAS VERT </Text><Text>- LYON</Text>
                                 </Flex>
-                                <Text color={"#353244"} fontSize={"20"}>Sept 2021 - Sept 2022</Text>
+                                <Text color={"#353244"} fontSize={"xl"}>Sept 2021 - Sept 2022</Text>
                             </Box>
                         </Flex>
                     </Box>
@@ -128,7 +128,7 @@ export default function Experiences() {
                         <Flex position={"relative"} right={"5%"} className='expL'>
                             <Image mr={4}  boxSize={"70px"} src='/Direct_market.png' />
                             <Box>
-                                <Flex textAlign={"end"} flexDirection={"row"} fontSize={"32px"} _hover={{
+                                <Flex textAlign={"end"} flexDirection={"row"} fontSize={"2xl"} _hover={{
                                     "& .text-container": {
                                         textShadow: "0px 0px 5px #D180FF"
                                     }
@@ -139,7 +139,7 @@ export default function Experiences() {
                                 >
                                     <Text color={"#B131FA"} className="text-container">DIRECT MARKET </Text><Text>- STRASBOURG</Text>
                                 </Flex>
-                                <Text color={"#353244"} fontSize={"20"}>Avr 2021 - Juin 2021</Text>
+                                <Text color={"#353244"} fontSize={"xl"}>Avr 2021 - Juin 2021</Text>
                             </Box>
                         </Flex>
                     </Box>
@@ -147,16 +147,16 @@ export default function Experiences() {
                 <Image objectFit={"contain"} objectPosition={"bottom"} src="/timeline.png" />
                 <Flex flexDirection={'column'} width={"100%"} height={"70%"} justifyContent={"space-between"} mt={"2vh"} display={{ base: "none", lg: "flex" }}>
                     <Box position={"relative"} left={"-15%"} width={"70%"} className='expR'>
-                        <Text color={"#B131FA"} fontSize={"32px"}>Chargée de communication interne</Text>
-                        <Text color={"#353244"} fontSize={"20"}>Stratégie , création de contenu, évenementiel, vidéo, graphisme, conduite du changement, gestion de projet</Text>
+                        <Text color={"#B131FA"} fontSize={"2xl"} fontWeight={"bold"} >Chargée de communication interne</Text>
+                        <Text color={"#353244"} fontSize={"xl"}>Stratégie , création de contenu, évenementiel, vidéo, graphisme, conduite du changement, gestion de projet</Text>
                     </Box>
                     <Box position={"relative"} left={"5%"} width={"70%"} className='expR'>
-                        <Text color={"#B131FA"} fontSize={"32px"}>Chargée de communication 360°</Text>
-                        <Text color={"#353244"} fontSize={"20"}>Community management, stratégie , création de contenu, vidéo, graphisme, emailing, rédaction web (SEO)</Text>
+                        <Text color={"#B131FA"} fontSize={"2xl"} fontWeight={"bold"} >Chargée de communication 360°</Text>
+                        <Text color={"#353244"} fontSize={"xl"}>Community management, stratégie , création de contenu, vidéo, graphisme, emailing, rédaction web (SEO)</Text>
                     </Box>
                     <Box position={"relative"} left={"-15%"} width={"70%"} className='expR'>
-                        <Text color={"#B131FA"} fontSize={"32px"}>Assistante chargée de communication et marketing</Text>
-                        <Text color={"#353244"} fontSize={"20"}>Graphisme, emailing, évenementiel, community management</Text>
+                        <Text color={"#B131FA"} fontSize={"2xl"}fontWeight={"bold"} >Assistante chargée de communication et marketing</Text>
+                        <Text color={"#353244"} fontSize={"xl"}>Graphisme, emailing, évenementiel, community management</Text>
                     </Box>
                 </Flex>
             </Flex>

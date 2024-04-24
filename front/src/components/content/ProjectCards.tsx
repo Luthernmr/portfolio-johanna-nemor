@@ -22,7 +22,7 @@ const MobileCarousel = () => {
                 naturalSlideWidth={100}
                 naturalSlideHeight={125}
                 totalSlides={projects.length}
-                visibleSlides={1.01}
+                visibleSlides={1.3}
                 infinite={true}
             >
                 <Box position="relative" m={10}>
@@ -39,10 +39,7 @@ const MobileCarousel = () => {
                                         boxShadow="0px 2px 6px rgba(0, 0, 0, 0.5)"
                                         position="relative"
                                     >
-                                        
                                          <ChakraLink as={ReactRouterLink}
-                                           
-                                           
                                             to='/portfolio'
                                             h={"100%"}
                                         >
@@ -128,6 +125,8 @@ const DesktopCarousel = () => {
                                             ".overlay2": {
                                                 opacity: 1,
                                                 rounded: "full",
+                                                transform: "translateY(-130%)",
+                                                transition: "transform 0.3s"
                                             },
                                             ".img": {
                                                 opacity: 0.8,
@@ -153,13 +152,13 @@ const DesktopCarousel = () => {
                                             opacity={0}
                                             className="overlay"
                                             transition=".3s ease"
-                                            bg="#B131FA"
+                                            bg="#353244"
                                             color="white"
                                             fontSize="16px"
                                             p="16px 32px"
                                             borderRadius="10px"
                                             _hover={{
-                                                backgroundColor: "#D869FE"
+                                                backgroundColor: "#B131FA"
                                             }}
                                             to='/portfolio'
                                             
@@ -167,7 +166,7 @@ const DesktopCarousel = () => {
                                             En savoir plus
                                         </ChakraLink>
                                         <Text position="absolute"
-                                            bottom={"2%"}
+                                            bottom={"-5%"}
                                             left={"2%"}
                                             p={"1"}
                                             rounded={"none"}

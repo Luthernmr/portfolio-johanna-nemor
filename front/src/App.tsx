@@ -10,6 +10,8 @@ import {
 
 import Home from './components/pages/Home'
 import Portfolio from './components/pages/Portfolio'
+import Footer from './components/content/Footer';
+import LivreBlanc from './components/pages/LivreBlanc';
 
 
 function App() {
@@ -24,8 +26,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/livre-blanc" element={<LivreBlanc />} />
         </Routes>
       </BrowserRouter>
+      <Footer/>
     </Center>
   )
 }

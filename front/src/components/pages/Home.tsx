@@ -3,7 +3,6 @@ import LandingPage from '../content/LandingPage'
 import Expertises from '../content/Expertises'
 import Experiences from '../content/Experiences'
 import Projects from '../content/Projects'
-import Contact from '../content/Contact';
 
 export default function Home() {
     return (
@@ -14,7 +13,6 @@ export default function Home() {
             <Expertises />
             <Experiences />
             <Projects />
-            <Contact />
         </>
     )
 }

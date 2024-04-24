@@ -1,17 +1,18 @@
 import { HamburgerIcon } from '@chakra-ui/icons';
-import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, HStack, Image, Link, VStack, useDisclosure } from '@chakra-ui/react'
+import { Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, HStack, Image, VStack, useDisclosure } from '@chakra-ui/react'
 import { useState } from 'react'
 import { Link as ReactRouterLink } from 'react-router-dom'
 import { Link as ChakraLink } from '@chakra-ui/react'
+import ContactButton from '../content/Buttons/ContactButton';
 
 
 
 export default function Header() {
 
     const header = [
-        { name: "ACCUEIL", link: "/" },
-        { name: "PORTFOLIO", link: "/portfolio" },
-        { name: "LIVRE BLANC", link: "/livre-blanc" },
+        { name: "Accueil", link: "/" },
+        { name: "Portfolio", link: "/portfolio" },
+        { name: "Livre blanc", link: "/livre-blanc" },
     ]
     const [activeLink, setActiveLink] = useState("/"); // Définissez le lien actif par défaut sur la page d'accueil
     // Fonction pour mettre à jour le lien actif lorsque vous cliquez sur un lien
@@ -23,15 +24,16 @@ export default function Header() {
 
 
     return (
-        <HStack  h="10vh" justifyContent={"space-between"} width={"100%"} mb={"2vh"} >
+        <HStack h="10vh" justifyContent={"space-between"} width={"100%"} mb={"2vh"} >
             <ChakraLink as={ReactRouterLink} to={"/"}>
                 <Image boxSize={{ base: "50px", lg: '70px' }} src='/Logo_jn.png' />
             </ChakraLink>
             <HStack fontSize={'2xl'} spacing={10} display={{ base: "none", lg: "flex" }}>
                 {header.map((elem, index) => (
                     <ChakraLink as={ReactRouterLink}
+                        fontFamily={"Raleway Variable"}
                         key={index}
-                        to={ elem.link}
+                        to={elem.link}
                         sx={{
                             textDecoration: activeLink === `${elem.link}` ? "underline" : "none",
                             textDecorationColor: activeLink === `${elem.link}` ? "#B131FA" : "transparent",
@@ -52,8 +54,7 @@ export default function Header() {
                     </ChakraLink>
 
                 ))}
-                <Button as={Link} href="mailto:jrevert06@gmail.com" fontSize={'2xl'} pl={10} pr={10} rounded={"full"} backgroundColor={"#B131FA"} color={"white"} _hover={{ opacity: "50%" }}>CONTACT</Button>
-            
+                <ContactButton />
             </HStack>
             <Box display={{ base: "flex", lg: "none" }} >
                 <HamburgerIcon
@@ -72,9 +73,9 @@ export default function Header() {
 
                                 <VStack fontSize={'2xl'} spacing={10} display={{ base: "flex", lg: "none" }}>
                                     {header.map((elem, index) => (
-                                        <ChakraLink  as={ReactRouterLink}
+                                        <ChakraLink as={ReactRouterLink}
                                             key={index}
-                                           to={elem.link}
+                                            to={elem.link}
                                             sx={{
                                                 textDecoration: activeLink === `${elem.link}` ? "underline" : "none",
                                                 textDecorationColor: activeLink === `${elem.link}` ? "#B131FA" : "transparent",
@@ -96,7 +97,7 @@ export default function Header() {
 
                                     ))}
                                 </VStack>
-                                <Button fontSize={'2xl'} pl={10} pr={10} rounded={"full"} w="80%" backgroundColor={"#B131FA"} color={"white"} _hover={{ opacity: "50%" }}>CONTACT</Button>
+                                <ContactButton />
                             </Flex>
                         </DrawerBody>
                     </DrawerContent>
