@@ -23,9 +23,9 @@ export default function LandingPage() {
             <Box position={"relative"} w={{ base: "100%", lg: "40%" }} height={"100%"}  mb={{base:"2", lg:"0"}}>
                 <Flex justifyContent={"space-evenly"} flexDirection={"column"} h={"100%"} >
                     <Flex flexDirection={"column"} lineHeight={"1"}>
-                        <Text fontSize={{base:"xl",lg:"4xl"}}>Bonjour, je suis</Text>
-                        <Heading fontSize={{ base: "2em", lg: "4em" }}>JOHANNA</Heading>
-                        <Text fontSize={{ base: "lg", lg:"3xl" }} color="#B131FA">Experte en communication & marketing</Text>
+                        <Text fontSize={{base:"l",lg:"2xl"}}>Bonjour, je suis</Text>
+                        <Heading  fontFamily={'century-gothic'} fontSize={{ base: "2em", lg: "4em" }} mt={-2} mb={10}>JOHANNA</Heading>
+                        <Text fontSize={{ base: "lg", lg:"2xl" }} color="#B131FA">Experte en communication & marketing</Text>
                     </Flex>
                     <Flex flexDirection={"column"} display={{ base: 'none', lg: "flex" }}>
                         <DownloadCvButton />

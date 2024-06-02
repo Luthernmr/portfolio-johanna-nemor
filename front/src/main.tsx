@@ -7,11 +7,12 @@ import './index.css'
 import '@fontsource/krona-one';
 // Supports weights 100-900
 import '@fontsource-variable/raleway';
+import '@fontsource/roboto';
 const theme = extendTheme({
 
   fonts: {
-    heading: `'Krona One', sans-serif`,
-    body: `'Raleway Variable', sans-serif`,
+    heading: `'century-gothic', sans-serif`,
+    body: `'century-gothic', Roboto, sans-serif`,
   },
   
 })

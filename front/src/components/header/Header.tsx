@@ -28,10 +28,10 @@ export default function Header() {
             <ChakraLink as={ReactRouterLink} to={"/"}>
                 <Image boxSize={{ base: "50px", lg: '70px' }} src='/Logo_jn.png' />
             </ChakraLink>
-            <HStack fontSize={'2xl'} spacing={10} display={{ base: "none", lg: "flex" }}>
+            <HStack fontSize={'xl'} spacing={10} display={{ base: "none", lg: "flex" }}>
                 {header.map((elem, index) => (
                     <ChakraLink as={ReactRouterLink}
-                        fontFamily={"Raleway Variable"}
+                        fontFamily={"century-gothic"}
                         key={index}
                         to={elem.link}
                         sx={{
@@ -71,7 +71,7 @@ export default function Header() {
                         <DrawerBody>
                             <Flex flexDirection={"column"} justifyContent={"space-around"} height={"100%"} alignItems={"center"}>
 
-                                <VStack fontSize={'2xl'} spacing={10} display={{ base: "flex", lg: "none" }}>
+                                <VStack fontSize={'2xl'}   spacing={10} display={{ base: "flex", lg: "none" }}>
                                     {header.map((elem, index) => (
                                         <ChakraLink as={ReactRouterLink}
                                             key={index}

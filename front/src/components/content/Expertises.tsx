@@ -8,7 +8,7 @@ export default function Expertises() {
         { img: "/conduite_du_changement.png", title: "Conduite du changement", skills: "Accompagner - Planifier - Communiquer" }
     ]
     return (
-        <Flex height={"100vh"} backgroundColor={"#353244"} width={"100vw"} maxW={"100vw"} flexDirection={{ base: "column-reverse", lg: "row" }} id='expertises'>
+        <Flex height={"100vh"} backgroundColor={"#353244"} width={"100vw"} maxW={"100vw"} flexDirection={{ base: "column-reverse", lg: "row" }} id='expertises' >
             <Center flexDirection={"row"} width={{ base: "100%", xl: "50%" }} h={"100%"}>
                 <VStack w={"100%"} spacing={5}>
                     {expertises.map((elem, index) => (
@@ -29,7 +29,7 @@ export default function Expertises() {
                 </VStack>
             </Center>
             <Flex textAlign={"center"} flexDirection={'column'} alignItems="center" justifyContent={"space-between"} height={{ base: "20%", lg: "100%" }}>
-                <Heading mt="10vh" size={{base: "xl", lg:"2xl"}}  color="white">Mes expertises</Heading>
+                <Heading mt="10vh" size={{base: "xl", lg:"2xl"}}   fontFamily={'century-gothic'} color="white">Mes expertises</Heading>
                 <Image display={{ base: "none", lg: "flex" }} height={"100%"} boxSize={"70%"} objectFit="cover" src='photo_joh_expertises.png' />
             </Flex >
         </Flex>

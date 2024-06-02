@@ -3,10 +3,10 @@ import { Box, Image, Text, Heading, Flex, HStack, Center, Link } from '@chakra-u
 export default function Footer() {
 
     return (
-        <Flex height={ "40vh"} width={"100%"} flexDirection={{ base: "column", lg:"row"}} backgroundColor={"#1a1824"} p={{base :"5", xl:"0"}}>
+        <Flex height={ "40vh"} width={"100%"} flexDirection={{ base: "column", lg:"row"}} backgroundColor={"purple.100"} p={{base :"5", xl:"0"}}>
             <Center width={{ base: "100%", lg:"70%"}}   h={{ base: "100%", lg:"100%"}}  flexDirection={"column"} position={"relative"}>
                 <Box  width={{ base:"100%", lg:"50%"}}  textAlign={{base:'center', lg:'start'}}  ml={{base:"", lg:"10em"}}>
-                    <Heading lineHeight={"1.2em"} width={'100%'} size={{ base: "md", lg: "xl", xl: "xl",  }} color={"#B131FA"}>Envie de se rencontrer?</Heading>
+                    <Heading fontFamily={'century-gothic'} lineHeight={"1.2em"} width={'100%'} size={{ base: "md", lg: "xl", xl: "xl",  }} color={"#B131FA"}>Envie de se rencontrer?</Heading>
                     <Text fontSize={{ base:"sm" , lg:"lg"}} color={"white"}>Prenons le temps de discuter autour d'un café.</Text>
                 </Box>
                 <Image display={{base : "none", xl: "flex"}} position={"absolute"} bottom={"0"} left={"0"} boxSize='100%' objectFit={"contain"} objectPosition={"left bottom"} src='/Photo_Joh_footer.png' />

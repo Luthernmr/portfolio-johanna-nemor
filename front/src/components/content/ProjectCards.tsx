@@ -108,19 +108,19 @@ const DesktopCarousel = () => {
                         <Slider>
                             {projects.map((elem, index) => (
                                 <Slide index={index} className='slide'>
-                                    <Flex
+                                    <Flex 
                                         width={"90%"}
-                                        height={"100%"}
+                                        height={"99%"}
                                         backgroundColor={"white"}
                                         flexDirection={"column"}
                                         borderRadius={"20px"}
-                                        boxShadow="0px 2px 6px rgba(0, 0, 0, 0.5)"
+                                        boxShadow="0px 2px 4px rgba(0, 0, 0, 0.5)"
                                         position="relative"
                                         _hover={{
                                             ".overlay": {
                                                 opacity: 1,
                                                 rounded: "full",
-                                                boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.5)",
+                                                boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.5)",
                                             },
                                             ".overlay2": {
                                                 opacity: 1,
@@ -158,7 +158,8 @@ const DesktopCarousel = () => {
                                             p="16px 32px"
                                             borderRadius="10px"
                                             _hover={{
-                                                backgroundColor: "#B131FA"
+                                                backgroundColor: "purple.100",
+                                                color : "gray.800"
                                             }}
                                             to='/portfolio'
                                             

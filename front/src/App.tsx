@@ -18,9 +18,9 @@ function App() {
 
   return (
 
-    <Center minW={"100%"} maxW={"100vw"} backgroundColor={"#f2f2f2"} flexDirection={"column"}>
+    <Center minW={"100%"} maxW={"100vw"} backgroundColor={"#f2f2f2"} flexDirection={"column"} backgroundImage={"radial-gradient(circle at 1px 1px, gray.400 1px, transparent 0);"} backgroundSize={"40px 40px"}>
       <BrowserRouter>
-      <Box width="85%" mt={"3vh"}>
+      <Box width="85%" mt={"3vh"} >
         <Header />
       </Box>
         <Routes>
