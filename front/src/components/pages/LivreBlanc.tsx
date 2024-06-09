@@ -8,7 +8,7 @@ class LivreBlanc extends Component {
             script.async = true;
             script.setAttribute("data-uid", "23eb9de9d6");
             script.src = "https://nemor.ck.page/23eb9de9d6/index.js";
-            document.getElementById("form-container").appendChild(script);
+            document?.getElementById("form-container")?.appendChild(script);
         }
     }
 
