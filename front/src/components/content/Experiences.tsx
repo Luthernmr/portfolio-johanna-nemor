@@ -61,7 +61,7 @@ export default function Experiences() {
 
     return (
         <Flex  height={"100vh"} maxH="100vh" width={"100%"} flexDirection={"column"} justifyContent={"end"} alignItems={"center"} >
-            <Center h={'100%'} mt={"5vh"}>
+            <Center h={'100%'} >
                 <Heading  fontFamily={'century-gothic'} textAlign={"center"} size={{base: "xl", lg:"2xl"}}  color={"gray.600"} backgroundColor={"purple.100"} p={2} borderRadius={"25"}>Mes experiences</Heading>
             </Center>
             <Image   height="100%" position={"relative"} bottom={"0px"} src='/experience.png' display={{ base: "flex", lg: "none" }}/>
@@ -146,17 +146,17 @@ export default function Experiences() {
                 </Flex>
                 <Image objectFit={"contain"} objectPosition={"bottom"} src="/timeline.png" />
                 <Flex flexDirection={'column'} width={"100%"} height={"70%"} justifyContent={"space-between"} mt={"2vh"} display={{ base: "none", lg: "flex" }}>
-                    <Box position={"relative"} left={"-10%"} width={"70%"} className='expR'>
+                    <Box position={"relative"} left={"-10%"} width={"80%"} className='expR'>
                         <Text color={"#B131FA"} fontSize={"2xl"} fontWeight={"bold"} >Chargée de communication interne</Text>
-                        <Text color={"#353244"} fontSize={"xl"}>Stratégie , création de contenu, évenementiel, vidéo, graphisme, conduite du changement, gestion de projet</Text>
+                        <Text color={"#353244"} fontSize={"lg"}>Stratégie , création de contenu, évenementiel, vidéo, graphisme, conduite du changement, gestion de projet</Text>
                     </Box>
-                    <Box position={"relative"} left={"5%"} width={"70%"} className='expR'>
+                    <Box position={"relative"} left={"5%"} width={"80%"} className='expR'>
                         <Text color={"#B131FA"} fontSize={"2xl"} fontWeight={"bold"} >Chargée de communication 360°</Text>
-                        <Text color={"#353244"} fontSize={"xl"}>Community management, stratégie , création de contenu, vidéo, graphisme, emailing, rédaction web (SEO)</Text>
+                        <Text color={"#353244"} fontSize={"lg"}>Community management, stratégie , création de contenu, vidéo, graphisme, emailing, rédaction web (SEO)</Text>
                     </Box>
-                    <Box position={"relative"} left={"-10%"} width={"70%"} className='expR'>
+                    <Box position={"relative"} left={"-10%"} width={"80%"} className='expR'>
                         <Text color={"#B131FA"} fontSize={"2xl"}fontWeight={"bold"} >Assistante chargée de communication et marketing</Text>
-                        <Text color={"#353244"} fontSize={"xl"}>Graphisme, emailing, évenementiel, community management</Text>
+                        <Text color={"#353244"} fontSize={"lg"}>Graphisme, emailing, évenementiel, community management</Text>
                     </Box>
                 </Flex>
             </Flex>
