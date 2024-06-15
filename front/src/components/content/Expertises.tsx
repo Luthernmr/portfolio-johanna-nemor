@@ -29,7 +29,7 @@ export default function Expertises() {
                 </VStack>
             </Center>
             <Flex textAlign={"center"} flexDirection={'column'} alignItems="center" justifyContent={"space-between"} height={{ base: "20%", lg: "100%" }}>
-                <Heading mt="10vh" size={{base: "xl", lg:"2xl"}}   fontFamily={'century-gothic'} color="white">Mes expertises</Heading>
+                <Heading mt="10vh" size={{base: "xl", lg:"2xl"}}   fontFamily={'century-gothic'}  color={"gray.600"}  backgroundColor={"purple.100"} p={2} borderRadius={"25"}>Mes expertises</Heading>
                 <Image display={{ base: "none", lg: "flex" }} height={"100%"} boxSize={"70%"} objectFit="cover" src='photo_joh_expertises.png' />
             </Flex >
         </Flex>

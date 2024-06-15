@@ -1,5 +1,6 @@
-import { Center } from '@chakra-ui/react';
+import { Center, Flex } from '@chakra-ui/react';
 import { Component } from 'react';
+
 
 class LivreBlanc extends Component {
     componentDidMount() {
@@ -15,8 +16,8 @@ class LivreBlanc extends Component {
     render() {
         console.log("Rendering LivreBlanc component");
         return (
-            <Center p={10}>
-                <div id="form-container"></div>
+            <Center p={10}  width={"100%"}  border={"2px solid red"}>
+                <Flex id="form-container" style={{ padding: '20px', border: '1px solid black' }}></Flex>
             </Center>
         );
     }

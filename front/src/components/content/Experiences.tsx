@@ -60,8 +60,8 @@ export default function Experiences() {
     }, []);
 
     return (
-        <Flex  height={"100vh"} maxH="100vh" width={"100%"} flexDirection={"column"} justifyContent={"end"} alignItems={"center"} >
-            <Center h={'100%'} >
+        <Flex  height={"100vh"} maxH="100%" width={"100%"} flexDirection={"column"} alignItems={"center"} >
+            <Center h={'100%'} mt={"5vh"} >
                 <Heading  fontFamily={'century-gothic'} textAlign={"center"} size={{base: "xl", lg:"2xl"}}  color={"gray.600"} backgroundColor={"purple.100"} p={2} borderRadius={"25"}>Mes experiences</Heading>
             </Center>
             <Image   height="100%" position={"relative"} bottom={"0px"} src='/experience.png' display={{ base: "flex", lg: "none" }}/>

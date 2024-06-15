@@ -13,7 +13,7 @@
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.0",
+    "@emotion/styled": "^11.11.5",
     "@fontsource-variable/raleway": "^5.0.19",
     "@fontsource/krona-one": "^5.0.13",
     "@fontsource/roboto": "^5.0.13",
@@ -32,7 +32,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@types/react": "^18.2.64",
+    "@types/react": "^18.3.3",
     "@types/react-dom": "^18.2.21",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
