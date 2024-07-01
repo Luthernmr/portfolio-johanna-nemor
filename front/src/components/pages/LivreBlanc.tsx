@@ -4,11 +4,11 @@ import { Component } from 'react';
 
 class LivreBlanc extends Component {
     componentDidMount() {
-        if (!document.querySelector(`script[data-uid="23eb9de9d6"]`)) {
+        if (!document.querySelector(`script[data-uid="a0bfe6cacd"]`)) {
             const script = document.createElement("script");
             script.async = true;
-            script.setAttribute("data-uid", "23eb9de9d6");
-            script.src = "https://nemor.ck.page/23eb9de9d6/index.js";
+            script.setAttribute("data-uid", "a0bfe6cacd");
+            script.src = "https://johanna-revert-nemor.ck.page/a0bfe6cacd/index.js";
             document?.getElementById("form-container")?.appendChild(script);
         }
     }
