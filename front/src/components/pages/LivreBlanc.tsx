@@ -16,8 +16,8 @@ class LivreBlanc extends Component {
     render() {
         console.log("Rendering LivreBlanc component");
         return (
-            <Center p={10}  width={"100%"}  >
-                <Flex id="form-container" style={{ padding: '20px'}}></Flex>
+            <Center>
+                <Flex width={'100%'} alignItems={'center'} id="form-container" style={{ padding: '20px'}}></Flex>
             </Center>
         );
     }
